@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 form validation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Form Validation with HTML5</h1>
+		</header>
+		<main>
+			<div class="row">
+				<div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+					<form>
+						<fieldset>
+							<legend>Sample form</legend>
+							<div class="form-group">
+								<label for="fullname">Full name</label>
+								<input required pattern="[a-zA-Z]+" type="text" name="fullname" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input required type="email" name="email" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="phone-number">Phone number</label>
+								<input required type="text" name="phone-number" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="age">Age</label>
+								<input required pattern="\d+" type="number" min="12" max="120" name="age" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="url">Website</label>
+								<input type="url" name="url" class="form-control">
+							</div>
+							<input type="color" />
+							<div class="form-group">
+								<label for="color">Favourite Color</label>
+								<input type="color" name="color" />
+							</div>
+							
+							<div class="form-group">
+								<label for="number-range">Number from 1 to 10</label>
+								<input type="range" min="1" max="10" name="number-range"/>
+							</div>
+							<input type="submit" name="Add" value="Submit">
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			
+		</footer>
+	</div>
+</body>
+</html>
